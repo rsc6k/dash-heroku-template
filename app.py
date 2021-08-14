@@ -69,6 +69,7 @@ grouped = px.box(mini_frame, x='sex', y='income', color='sex',
 categories_list = ["satjob", "relationship", "male_breadwinner", "men_bettersuited", "child_suffer", "men_overwork"]
 group_by_list = ["sex", "region", "education"]
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
 app.layout = html.Div(
     [    
     html.Div([    
